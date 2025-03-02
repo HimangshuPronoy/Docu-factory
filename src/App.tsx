@@ -10,6 +10,7 @@ import QuestionForm from "./pages/QuestionForm";
 import ReviewDocument from "./pages/ReviewDocument";
 import GeneratedDocument from "./pages/GeneratedDocument";
 import TermsOfService from "./pages/TermsOfService";
+import Contact from "./pages/Contact";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext";
@@ -28,6 +29,7 @@ function App() {
               <Route path="login" element={<Login />} />
               <Route path="register" element={<Register />} />
               <Route path="terms-of-service" element={<TermsOfService />} />
+              <Route path="contact" element={<Contact />} />
               
               <Route element={<ProtectedRoute />}>
                 <Route path="dashboard" element={<Dashboard />} />

@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
@@ -10,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { UserIcon, FileText } from "lucide-react";
+import { UserIcon, FileText, PhoneCall } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const { user, logout, isAuthenticated } = useAuth();
@@ -50,6 +51,12 @@ const Navbar: React.FC = () => {
                   </Link>
                 </>
               )}
+              <Link
+                to="/contact"
+                className="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all-300"
+              >
+                Contact
+              </Link>
             </div>
           </div>
           <div className="flex items-center">
